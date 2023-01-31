@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입 페이지</title>
+</head>
+<body>
+	<form>
+		<div>회원가입</div>
+		<div>
+			<span>*</span>
+			필수입력사항
+		</div>
+		<div>
+			<div style="display: inline-block;">
+				<label>아이디<span>*</span></label>
+			</div>
+			<div style="display: inline-block;">
+				<input type="text" name="memberId" placeholder="아이디를 입력해주세요">
+				<button>중복확인</button>
+			</div>
+		</div>
+		<div>
+			<div style="display: inline-block;">
+				<label>비밀번호<span>*</span></label>
+			</div>
+			<div style="display: inline-block;">
+				<input type="password" name="password" placeholder="비밀번호를 입력해주세요">
+			</div>
+		</div>
+		<div>
+			<div style="display: inline-block;">
+				<label>비밀번호확인<span>*</span></label>
+			</div>
+			<div style="display: inline-block;">
+				<input type="password" name="passwordConfirm" placeholder="비밀번호를 한번 더 입력해주세요">
+			</div>
+		</div>
+		<div>
+			<div style="display: inline-block;">
+				<label>이름<span>*</span></label>
+			</div>
+			<div style="display: inline-block;">
+				<input type="text" name="name" placeholder="이름을 입력해주세요">
+			</div>
+		</div>
+		<div>
+			<div style="display: inline-block;">
+				<label>이메일<span>*</span></label>
+			</div>
+			<div style="display: inline-block;">
+				<input type="text" name="email" placeholder="예: marketkurly@kurly.com">
+				<button>중복확인</button>
+			</div>
+		</div>
+		<div>
+			<div style="display: inline-block;">
+				<label>휴대폰<span>*</span></label>
+			</div>
+			<div style="display: inline-block;">
+				<input type="text" name="mobileNumber" placeholder="숫자만 입력해주세요.">
+				<button>인증번호 받기</button>
+			</div>
+		</div>
+		<div>
+			<div style="display: inline-block;">
+				<label>주소<span>*</span></label>
+			</div>
+			<button>주소 검색</button>
+			<div>
+				<div>
+					<input type="text" name="address">
+					<button>재검색</button>
+				</div>
+				<div>
+					<input type="text" name="subAddress" placeholder="나머지 주소를 입력해주세요">
+				</div>
+				<span style="display: block;">샛별배송</span>
+				<span style="display: block;">배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
+			</div>
+		</div>
+		<div>
+			<div style="display: inline-block;">
+				<label>성별</label>
+			</div>
+			<div style="display: inline-block;">
+				<label><input type="radio" name="gender" value="남"> 남자</label>
+				<label><input type="radio" name="gender" value="여"> 여자</label>
+				<label><input type="radio" name="gender" value="선택안함"> 선택안함</label>
+			</div>
+		</div>
+		<div>
+			<div style="display: inline-block;">
+				<label>생년월일</label>
+			</div>
+			<div style="display: inline-block;">
+				<div style="display: inline-block;">
+					<input type="text" name="birthYear" placeholder="YYYY">
+				</div>
+				<span>/</span>
+				<div style="display: inline-block;">
+					<input type="text" name="birthMonth" placeholder="MM">
+				</div>
+				<span>/</span>
+				<div style="display: inline-block;">
+					<input type="text" name="birthDay" placeholder="DD">
+				</div>
+			</div>
+		</div>
+		<div>
+			<div style="display: inline-block;">
+				<label>추가입력 사항</label>
+			</div>
+			<div style="display: inline-block;">
+				<label><input type="radio" name="joinExtraInput" value="친구초대 추천인 아이디">친구초대 추천인 아이디</label>
+				<label><input type="radio" name="joinExtraInput" value="참여 이벤트명">참여 이벤트명</label>
+			</div>
+			<div>
+				<div>
+					<input type="text" placeholder="추천인 아이디를 입력해 주세요.">
+					<span><div>가입 후 7일 내 첫 주문 배송완료 시, 친구초대 이벤트 적립금이 지급됩니다.</div></span>
+				</div>
+				<div>
+					<input type="text" placeholder="참여 이벤트명을 입력해주세요">
+					<span><div>추천인 아이디와 참여 이벤트명 중 하나만 선택 가능합니다.<br>가입 이후는 수정이 불가능 합니다.<br>대소문자 및 띄어쓰기에 유의해주세요.</div></span>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div style="display: inline-block;">
+				<label>이용약관동의<span>*</span></label>
+			</div>
+			<div>
+				<label><input type="checkbox">전체 동의합니다.</label>
+				<p>
+					선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.
+				</p>
+			</div>
+			<div>
+				<label><input type="checkbox">이용약관 동의 <span>(필수)</span></label>
+				<a>약관보기</a>
+			</div>
+			<div>
+				<label><input type="checkbox">개인정보 수집∙이용 동의 <span>(필수)</span></label>
+				<a>약관보기</a>
+			</div>
+			<div>
+				<label><input type="checkbox">개인정보 수집∙이용 동의<span>(선택)</span></label>
+				<a>약관보기</a>
+			</div>
+			<div>
+				<div>
+					<label><input type="checkbox">무료배송, 할인쿠폰 등 혜택/정보 수신 동의<span>(선택)</span></label>
+				</div>
+				<div>
+					<label><input type="checkbox">SMS</label>
+				</div>
+				<div>
+					<label><input type="checkbox">이메일</label>
+				</div>
+				<div>
+					<p>동의 시 한 달간 [5%적립] + [2만원 이상 무료배송] 첫 주문 후 안내</p>
+				</div>
+			</div>
+			<div>
+				<label><input type="checkbox">본인은 만 14세 이상입니다.<span>(필수)</span></label>
+			</div>
+			<input type="submit" value="가입하기">
+		</div>
+	</form>
+</body>
+</html>
